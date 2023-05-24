@@ -2,7 +2,9 @@
 import cdsapi
 import sys
 
-
+#install Install the CDS API key first 
+#https://cds.climate.copernicus.eu/api-how-to
+     
 #
 year = str(sys.argv[1])
 mon = str(sys.argv[2])
