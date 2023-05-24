@@ -37,8 +37,7 @@ def extract_era(var, opt):
   #set the date range
   daterange = create_daterange("2022-01-01", "2023-01-01", "H")[1][:-1]
   #set the data path
-  if var in ['boundary_layer_height']: inpath="../../data/era5/"
-  else: inpath="../../data/era5land/"
+  inpath="../../data/era5/"
   outpath="./meteo/"
 
   ### extract data ###
