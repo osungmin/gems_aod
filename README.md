@@ -1,4 +1,8 @@
-# GEMS_aerosol
+# Relationship between AOD and PM10 in South Korea revealed by XML
+
+Our study aims to find empirical relationships between GEMS AOD satellite data and ground PM10 measurements over SKorea
+
+# GEMS AOD satellite data
 
 To get familiar with the GEMS and its air quality products; 
 
@@ -10,8 +14,22 @@ To get familiar with the GEMS and its air quality products;
 (https://github.com/NASAARSET/GEMS_AQ)
 
 
-Where to download GEMS data; https://nesc.nier.go.kr
-Where to download in-situ data (Korea); https://www.airkorea.or.kr
+# Data availability
+
+- GEMS AOD data; https://nesc.nier.go.kr
+- in-situ PM10 data (Korea); https://www.airkorea.or.kr
+- ERA meteorological data; https://cds.climate.copernicus.eu/
 
 
-# GEMS_aerosol
+# Scripts
+1. ./prepdata: 
+ - to download era5/land meteorological data
+ - to match AOM, PM10 and, other meteorological data
+
+2. ./analy:
+ - to fit empirical equations to AOD-PM10 data 
+ - to estimate PM10 using AOD with Random Forest
+ - to evaluate input importance using SHAP Values
+
+3. ./figures:
+ - to generate figures in the paper
