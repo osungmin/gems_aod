@@ -24,9 +24,10 @@ To get familiar with the GEMS and its air quality products;
 
 # Scripts
 1. ./prepdata: 
- - to download era5/land meteorological data
- - to extract meteo data at the lat/lon of AOD and PM10
- - to match AOD, PM10 and, other meteorological data
+ - ./predata/airkorea/: to clean up Airkorea PM10 data
+ - ./predata/era/: to download era5/land meteorological data and extract data 
+ - ./predata/gems/: to extract GEMS AOD at the closest time/location to Airkorea sites
+ - to prepare collocated AOD, PM10, other meteorological data
 
 2. ./analy:
  - to fit empirical equations to AOD-PM10 data 
