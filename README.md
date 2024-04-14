@@ -27,7 +27,8 @@ To get familiar with the GEMS and its air quality products;
   - airk_cleanup.py: to clean up Airkorea data and create a meta file (lat/lon info)
   - gems_extract.py: to extract GEMS AOD at the closest location to Airkorea stations
   - meteo_extract.py: to extract meteorological data from ERA5 and ERA5-Land reanalysis data
-
+  - era: to download ERA5 and ERA5-Land data
+    
 - analy:
   - emprical.py: to estimate PM10/PM2.5 from AOD using empirical equations and Random Forest (temporal prediction)
     - input importance is tested using SHAP
