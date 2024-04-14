@@ -17,22 +17,21 @@ To get familiar with the GEMS and its air quality products;
 
 # Data availability
 
-- GEMS AOD data; https://nesc.nier.go.kr > need to request the FTP service
-- in-situ PM10 data (Korea); https://www.airkorea.or.kr
+- GEMS AOD data; https://nesc.nier.go.kr > need to request the FTP service (now API is available!)
+- in-situ PM10/PM2.5 data (Korea); https://www.airkorea.or.kr
 - ERA meteorological data; https://cds.climate.copernicus.eu/
 
 
 # Scripts
-1. ./prepdata: 
- - ./predata/airkorea/: to clean up Airkorea PM10 data
- - ./predata/era/: to download era5/land meteorological data and extract data 
- - ./predata/gems/: to extract GEMS AOD at the closest time/location to Airkorea sites
- - to prepare collocated AOD, PM10, other meteorological data
+- prep:
+  - airk_cleanup.py: to clean up Airkorea data and create a meta file (lat/lon info)
+  - gems_extract.py: to extract GEMS AOD at the closest location to Airkorea stations
+  - meteo_extract.py: to extract meteorological data from ERA5 and ERA5-Land reanalysis data
 
-2. ./analy:
- - to fit empirical equations to AOD-PM10 data 
- - to estimate PM10 using AOD with Random Forest
- - to evaluate input importance using SHAP Values
+- analy:
+  - emprical.py: to estimate PM10/PM2.5 from AOD using empirical equations and Random Forest (temporal prediction)
+    - input importance is tested using SHAP
+  - spatial_rf.py: to estimate PM10/PM2.5 in ungauged location using Random Forest (spatial prediction) 
 
-3. ./figures:
- - to generate figures in the paper
+- figures:
+  - paper figure scripts
