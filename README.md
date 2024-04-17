@@ -1,6 +1,6 @@
-# Relationship between AOD and PM10 in South Korea revealed by XML
+# Use of GEMS AOD data for estimating ground-level particulate matter concentrations in South Korea
 
-Our study aims to find empirical relationships between GEMS AOD satellite data and ground PM10 measurements over SKorea
+Our study aims to estimate ground-level PM10/PM2.5 at ungauged points in South Korea using GEMS AOD satellite data
 
 # GEMS AOD satellite data
 
@@ -23,6 +23,7 @@ To get familiar with the GEMS and its air quality products;
 
 
 # Scripts
+
 - prep:
   - airk_cleanup.py: to clean up Airkorea data and create a meta file (lat/lon info)
   - gems_extract.py: to extract GEMS AOD at the closest location to Airkorea stations
