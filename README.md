@@ -1,6 +1,6 @@
-# Use of GEMS AOD data for estimating ground-level particulate matter concentrations in South Korea
+# Use of GEMS AOD data to estimate ground-level particulate matter concentrations in South Korea
 
-Our study aims to estimate ground-level PM10/PM2.5 at ungauged points in South Korea using GEMS AOD satellite data
+Our study aims to estimate ground-level PM10/PM2.5 in South Korea using GEMS AOD satellite data
 
 # GEMS AOD satellite data
 
@@ -26,14 +26,20 @@ To get familiar with the GEMS and its air quality products;
 
 - prep:
   - airk_cleanup.py: to clean up Airkorea data and create a meta file (lat/lon info)
-  - gems_extract.py: to extract GEMS AOD at the closest location to Airkorea stations
+  - gems_extract.py: to extract GEMS AOD at the closest pixels to Airkorea stations
   - meteo_extract.py: to extract meteorological data from ERA5 and ERA5-Land reanalysis data
   - era: to download ERA5 and ERA5-Land data
     
 - analy:
-  - emprical.py: to estimate PM10/PM2.5 from AOD using empirical equations and Random Forest (temporal prediction)
+  - emprical.py: to estimate PM10/PM2.5 from AOD using empirical equations and random forest (temporal prediction)
     - input importance is tested using SHAP
-  - spatial_rf.py: to estimate PM10/PM2.5 in ungauged location using Random Forest (spatial prediction) 
-
+  - rf.py: to estimate PM10/PM2.5 using random forest, with additional trianing data from neighboring stations. 
+    
 - figures:
   - paper figure scripts
+
+# Reference
+
+- We would highly appreciate if you cite our paper when you use our scripts or data.
+Exploring the potential of GEMS aerosol optical depth to estimate sub-daily ground level aerosol in South Korea through a machine learning (O et al., 2024, submitted)
+  
