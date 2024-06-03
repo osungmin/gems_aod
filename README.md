@@ -41,5 +41,6 @@ To get familiar with the GEMS and its air quality products;
 # Reference
 
 - We would highly appreciate if you cite our paper when you use our scripts or data.
+
 Exploring the potential of GEMS aerosol optical depth to estimate sub-daily ground level aerosol in South Korea through a machine learning (O et al., 2024, submitted)
   
