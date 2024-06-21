@@ -36,7 +36,7 @@ To get familiar with the GEMS and its air quality products;
   - rf.py: to estimate PM10/PM2.5 using random forest, with additional trianing data from neighboring stations. 
     
 - figures:
-  - paper figure scripts
+  - paper figure scripts with (sample) plot data
 
 # Reference
 
