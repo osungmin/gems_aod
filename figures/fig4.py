@@ -2,14 +2,10 @@
 import numpy as np
 import pandas as pd
 
-from scipy import stats
-
 import matplotlib as mpl
 import matplotlib.pylab as plt
 import matplotlib.gridspec as gridspec
-import matplotlib.colors as mcolors
 from mpl_toolkits.axes_grid1 import make_axes_locatable
-from matplotlib.lines import Line2D
 print ("modules imported")
 
 def plt_imshow(ax, var):
