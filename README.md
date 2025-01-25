@@ -28,7 +28,7 @@ To get familiar with the GEMS and its air quality products;
   - airk_cleanup.py: to clean up Airkorea data and create a meta file (lat/lon info)
   - gems_extract.py: to extract GEMS AOD at the closest pixels to Airkorea stations
   - meteo_extract.py: to extract meteorological data from ERA5 and ERA5-Land reanalysis data
-  - era: to download ERA5 and ERA5-Land data
+  - down_era.py, down_eraland.py: to download ERA5 and ERA5-Land data
     
 - analy:
   - emprical.py: to estimate PM10/PM2.5 from AOD using empirical equations and random forest (temporal prediction)
@@ -42,5 +42,5 @@ To get familiar with the GEMS and its air quality products;
 
 - We would highly appreciate if you cite our paper when you use our scripts.
 
-Estimating​ ​hourly​ ​ground-level​ ​aerosols​ ​using​ ​GEMS​ ​aerosol​ ​optical​ ​depth:​ ​A​ ​machine​ ​learning​ ​approach (O et al., 2024, submitted)
+Estimating​ ​hourly​ ​ground-level​ ​aerosols​ ​using​ ​GEMS​ ​aerosol​ ​optical​ ​depth:​ ​A​ ​machine​ ​learning​ ​approach (O et al., 2025) doi: 
   
