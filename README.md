@@ -31,9 +31,8 @@ To get familiar with the GEMS and its air quality products;
   - down_era.py, down_eraland.py: to download ERA5 and ERA5-Land data
     
 - analy:
-  - emprical.py: to estimate PM10/PM2.5 from AOD using empirical equations and random forest (temporal prediction)
+  - model_runs.py: to estimate PM10/PM2.5 from AOD using empirical equations and random forest (temporal prediction)
     - input importance is tested using SHAP
-  - rf.py: to estimate PM10/PM2.5 using random forest, with additional trianing data from neighboring stations. 
     
 - figures:
   - paper figure scripts with (sample) plot data
